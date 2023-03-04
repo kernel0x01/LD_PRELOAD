@@ -6,6 +6,6 @@ Set the LD_PRELOAD environment variable to the full path of the libfilehook.so s
 
         export LD_PRELOAD=/full/path/to/libfilehook.so
 #Usage
-        Create a file called king.txt with the contents "bhaisd"
+        Create a file called shit.txt with the contents "goodboy"
 
-Run any program that opens and writes to king.txt, and the open and write functions in your shared library will be called instead of the real open and write functions. If the file descriptor is for king.txt, the write function will replace all occurrences of "bhaisd" with "goodboy" before writing to the file.
+Run any program that opens and writes to king.txt, and the open and write functions in your shared library will be called instead of the real open and write functions. If the file descriptor is for king.txt, the write function will replace all occurrences of "goodboy" with "badboy" before writing to the file.
