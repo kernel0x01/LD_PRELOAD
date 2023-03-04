@@ -2,8 +2,7 @@
 <h4>Compile the shared library by running the following command:</h4>
 
         gcc -shared -fPIC -o libfilehook.so filehook.c -ldl
-        Set the LD_PRELOAD environment variable to the full path of the libfilehook.so shared library:
-
+Set the LD_PRELOAD environment variable to the full path of the libfilehook.so shared library:
 
         export LD_PRELOAD=/full/path/to/libfilehook.so
 #Usage
