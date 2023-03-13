@@ -29,7 +29,7 @@ ssize_t write(int fd, const void *buf, size_t count) {
 
     // Check if the file descriptor is for "king.txt".
     if (fd == open("shit.txt", O_RDWR, S_IRUSR | S_IWUSR)) {
-        // If the file descriptor is for "king.txt", replace all occurrences of "bhaisd" with "goodboy".
+        // If the file descriptor is for "king.txt", replace all occurrences of "badboy" with "goodboy".
         char *new_buf = strdup(buf);
         char *token = strtok(new_buf, " ");
         while (token != NULL) {
